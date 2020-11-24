@@ -2,6 +2,10 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+//Instalacion de realm
+apply plugin: 'kotlin-kapt'
+apply plugin: 'realm-android'
+
 android {
     compileSdkVersion 30
     buildToolsVersion "30.0.2"
@@ -35,10 +39,5 @@ dependencies {
     androidTestImplementation 'androidx.test.ext:junit:1.1.2'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
 
-    //Instalacion de realm
-    apply plugin: 'com.android.application'
-    apply plugin: 'kotlin-kapt'
-    apply plugin: 'kotlin-android'
-    apply plugin: 'kotlin-android-extensions'
-    apply plugin: 'realm-android'
+
 }
