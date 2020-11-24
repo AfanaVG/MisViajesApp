@@ -4,6 +4,7 @@ import com.example.misviajesapp.model.Usuario
 import io.realm.Realm
 import io.realm.kotlin.createObject
 import io.realm.kotlin.where
+import java.security.MessageDigest
 
 class CRUDprofesor{
     private fun calcularID():Int{
@@ -28,5 +29,12 @@ class CRUDprofesor{
                 realmUsuario.nombre = usuario.nombre
             }
         })
+    }
+
+    fun encriptar(pass:String):String{
+        val bytes = pass.toString().toByteArray()
+        val md = MessageDigest.getInstance("SH-256")
+        val digest = md.digest(bytes)
+        return digest.fold("",{str,it -> str + "%02x".format(it)})
     }
 }
