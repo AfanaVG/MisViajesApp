@@ -27,6 +27,10 @@ class CRUDprofesor{
                 var index = calcularID()
                 var realmUsuario = realm.createObject<Usuario>(index)
                 realmUsuario.nombre = usuario.nombre
+                realmUsuario.nombreUsuario = usuario.nombreUsuario
+                realmUsuario.contraseña = usuario.contraseña
+                realmUsuario.email = usuario.email
+                realmUsuario.foto = usuario.foto
             }
         })
     }
@@ -36,5 +40,9 @@ class CRUDprofesor{
         val md = MessageDigest.getInstance("SH-256")
         val digest = md.digest(bytes)
         return digest.fold("",{str,it -> str + "%02x".format(it)})
+    }
+
+    fun getUsuario(nombreUsuario:String, emai:String):String{
+
     }
 }
