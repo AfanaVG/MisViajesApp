@@ -43,6 +43,6 @@ class CRUDprofesor{
     }
 
     fun getUsuario(nombreUsuario:String, emai:String):String{
-
+        return ""
     }
 }
