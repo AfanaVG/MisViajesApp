@@ -7,11 +7,11 @@
     tools:context=".InicioActivity">
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/txt_inicio_registro"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:linksClickable="true"
-        android:text="TextView"
+        android:text="@string/registre_aqui"
         android:textColorLink="#3F51B5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -21,14 +21,15 @@
         app:layout_constraintVertical_bias="0.866" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/edt_inicio_pass"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="28dp"
         android:ems="10"
+        android:hint="@string/pass"
         android:inputType="textPersonName"
         android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintBottom_toTopOf="@+id/btn_inicio_iniciar"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
@@ -42,7 +43,7 @@
         android:fontFamily="sans-serif-black"
         android:text="Turistadroid"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edt_inicio_email"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.908"
         app:layout_constraintStart_toStartOf="parent"
@@ -55,7 +56,7 @@
         android:layout_height="111dp"
         android:layout_marginTop="28dp"
         android:layout_marginBottom="52dp"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/edt_inicio_email"
         app:layout_constraintEnd_toStartOf="@+id/textView"
         app:layout_constraintHorizontal_bias="0.38"
         app:layout_constraintStart_toStartOf="parent"
@@ -64,24 +65,24 @@
         app:srcCompat="@drawable/icono_mapa" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/edt_inicio_email"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="40dp"
         android:ems="10"
+        android:hint="@string/email"
         android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName2"
+        app:layout_constraintBottom_toTopOf="@+id/edt_inicio_pass"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/btn_inicio_iniciar"
         android:layout_width="157dp"
         android:layout_height="69dp"
         android:layout_marginBottom="196dp"
-        android:text="Button"
+        android:text="@string/iniciar"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent" />
@@ -90,9 +91,9 @@
         android:id="@+id/textView2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="TextView"
+        android:text="@string/pregunta_registro"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/textView3"
+        app:layout_constraintEnd_toStartOf="@+id/txt_inicio_registro"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.866" />
