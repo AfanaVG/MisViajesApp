@@ -6,4 +6,11 @@
     android:layout_height="match_parent"
     tools:context=".RegistroActivity">
 
+    <ImageButton
+        android:id="@+id/imageButton"
+        android:layout_width="181dp"
+        android:layout_height="142dp"
+        app:srcCompat="@drawable/nueva_imagen"
+        tools:layout_editor_absoluteX="115dp"
+        tools:layout_editor_absoluteY="41dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
