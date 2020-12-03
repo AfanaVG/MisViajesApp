@@ -6,7 +6,7 @@ import io.realm.kotlin.createObject
 import io.realm.kotlin.where
 import java.security.MessageDigest
 
-class CRUDprofesor{
+class CRUDUsuario{
     private fun calcularID():Int{
         var realm = Realm.getDefaultInstance()
         var idActual = realm.where<Usuario>().max("id")
