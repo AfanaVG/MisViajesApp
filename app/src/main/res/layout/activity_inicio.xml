@@ -4,98 +4,119 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/primary_light"
     tools:context=".InicioActivity">
 
     <TextView
-        android:id="@+id/txt_inicio_registro"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:linksClickable="true"
-        android:text="@string/registre_aqui"
-        android:textColorLink="#3F51B5"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.696"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
-
-    <EditText
-        android:id="@+id/edt_inicio_pass"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="28dp"
-        android:ems="10"
-        android:hint="@string/pass"
-        android:inputType="textPersonName"
-        android:text="Name"
-        app:layout_constraintBottom_toTopOf="@+id/btn_inicio_iniciar"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/textView"
+        android:id="@+id/inicio_txt_title"
         android:layout_width="236dp"
         android:layout_height="66dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginBottom="52dp"
+        android:layout_marginTop="60dp"
         android:fontFamily="sans-serif-black"
         android:text="Turistadroid"
         android:textSize="36sp"
-        app:layout_constraintBottom_toTopOf="@+id/edt_inicio_email"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintHorizontal_bias="0.96"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.506" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/inicio_img_icon"
         android:layout_width="117dp"
         android:layout_height="111dp"
-        android:layout_marginTop="28dp"
-        android:layout_marginBottom="52dp"
-        app:layout_constraintBottom_toTopOf="@+id/edt_inicio_email"
-        app:layout_constraintEnd_toStartOf="@+id/textView"
-        app:layout_constraintHorizontal_bias="0.38"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        app:layout_constraintEnd_toStartOf="@+id/inicio_txt_title"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.503"
-        app:srcCompat="@drawable/icono_mapa" />
-
-    <EditText
-        android:id="@+id/edt_inicio_email"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="40dp"
-        android:ems="10"
-        android:hint="@string/email"
-        android:inputType="textPersonName"
-        app:layout_constraintBottom_toTopOf="@+id/edt_inicio_pass"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:srcCompat="@drawable/splash" />
 
     <Button
         android:id="@+id/btn_inicio_iniciar"
-        android:layout_width="157dp"
-        android:layout_height="69dp"
-        android:layout_marginBottom="196dp"
+        android:layout_width="221dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="70dp"
+        android:layout_marginEnd="100dp"
+        android:background="@color/colorAccent"
         android:text="@string/iniciar"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="@color/icons"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inicio_txtil_pass" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/inicio_txt_cuenta"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="100dp"
         android:text="@string/pregunta_registro"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/txt_inicio_registro"
+        app:layout_constraintEnd_toStartOf="@+id/inicio_btn_registrarse"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.866" />
+        app:layout_constraintTop_toBottomOf="@+id/btn_inicio_iniciar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/inicio_btn_registrarse"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="100dp"
+        android:background="#00000000"
+        android:text="@string/registre_aqui"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="#3F51B5"
+        android:textSize="14sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/inicio_txt_cuenta"
+        app:layout_constraintTop_toBottomOf="@+id/btn_inicio_iniciar"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inicio_txtil_email"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:hint="@string/email"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inicio_img_icon">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inicio_edittxt_email"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inicio_txtil_pass"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="100dp"
+        android:hint="@string/pass"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/inicio_txtil_email"
+        app:passwordToggleEnabled="true">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/inicio_edittxt_pass"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </com.google.android.material.textfield.TextInputLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
