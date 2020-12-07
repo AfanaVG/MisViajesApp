@@ -1,4 +1,11 @@
 <resources>
     <string name="app_name">MisViajesApp</string>
     <string name="title_activity_maps">Map</string>
+    <string name="email">Email</string>
+    <string name="pass">Contraseña</string>
+    <string name="iniciar">Iniciar sesión</string>
+    <string name="pregunta_registro">¿No tiene cuenta?</string>
+    <string name="registre_aqui">Registrarse aquí</string>
+    <string name="error_email"></string>
+    <string name="error_pass"></string>
 </resources>
