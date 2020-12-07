@@ -1,5 +1,7 @@
 <resources>
-    <string name="app_name">MisViajesApp</string>
+    <string name="app_name">Turista droid</string>
+    <string name="login_title">Login</string>
+
     <string name="title_activity_maps">Map</string>
     <string name="email">Email</string>
     <string name="pass">Contraseña</string>
@@ -8,4 +10,8 @@
     <string name="registre_aqui">Registrarse aquí</string>
     <string name="error_email"></string>
     <string name="error_pass"></string>
+
+    <string name="nombre">Nombre</string>
+    <string name="user_nombre">Nombre de usuario</string>
+    <string name="registrarse">Registrarse</string>
 </resources>

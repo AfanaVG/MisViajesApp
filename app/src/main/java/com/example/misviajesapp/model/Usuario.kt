@@ -5,8 +5,16 @@ import io.realm.RealmObject
 import io.realm.annotations.PrimaryKey
 
 
-open class Usuario constructor(@PrimaryKey var id:Int, var nombre:String, var nombreUsuario: String, var email:String, var contraseña:String, var foto:Int) : RealmObject() {
+open class Usuario(
+    @PrimaryKey
+    var id:Long = 0,
+    var nombre:String ="",
+    var nombreUsuario: String ="",
+    var email:String ="",
+    var contraseña:String ="",
+    var foto:String="") : RealmObject() {
 
-    constructor() : this(-1,"","","","", -1)
+    constructor(nombre: String, nombreUsuario: String, email: String, contraseña: String, foto: String)
+            : this(System.currentTimeMillis()/1000,nombre,nombreUsuario, email, contraseña, foto)
 
 }
