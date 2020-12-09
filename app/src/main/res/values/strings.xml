@@ -8,6 +8,7 @@
     <string name="iniciar">Iniciar sesión</string>
     <string name="pregunta_registro">¿No tiene cuenta?</string>
     <string name="registre_aqui">Registrarse aquí</string>
+
     <string name="error_email"></string>
     <string name="error_pass"></string>
 

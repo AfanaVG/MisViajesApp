@@ -80,7 +80,8 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="30dp"
             android:layout_marginBottom="10dp"
-            android:hint="@string/pass">
+            android:hint="@string/pass"
+            app:passwordToggleEnabled="true">
 
             <com.google.android.material.textfield.TextInputEditText
                 android:id="@+id/regis_edittxt_pwd"
